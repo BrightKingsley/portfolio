@@ -6,12 +6,22 @@
         "/images/apartment-listing-mobile.png",
         "/images/apartment-listing.png"
       ],
-      "short-desccription": "this is a short description for the 'all-projects' page ",
-      "description": "Lorem ipsum, dolor sit amet consectetur adipisiprojectsListcing elit. Magni nesciunt et eos sint laborum beatae libero dolore est natus, maiores officiis officia enim aspernatur voluptas repudiandae dicta dignissimos excepturi incidunt voluptatum fugit, architecto esse. Natus sit molestias voluptatum! Ipsa culpa id autem! Non aspernatur sint ullam illum consectetur inventore dicta magni repellat asperiores sunt perferendis explicabo laboriosam velit culpa, totam odit neque cum molestias odio, adipisci voluptate placeat sit obcaecati aperiam. Earum, ducimus maiores quam deserunt officiis at natus, optio sapiente saepe hic quo debitis aut et eligendi alias magni, iste cumque. Assumenda corporis aliquid, dignissimos perspiciatis itaque laborum dolorum!",
+      "short_description": "this is a short description for the 'all-projects' page ",
+      "preview_images": [""],
+      "tech_stack": [""],
+      "features": [
+        {
+          "heading": "heading",
+          "content": "lorem ipsum is thge feature description",
+          "images": [""]
+        }
+      ],
+      "long_description": "Lorem ipsum, dolor sit amet consectetur adipisiprojectsListcing elit. Magni nesciunt et eos sint laborum beatae libero dolore est natus, maiores officiis officia enim aspernatur voluptas repudiandae dicta dignissimos excepturi incidunt voluptatum fugit, architecto esse. Natus sit molestias voluptatum! Ipsa culpa id autem! Non aspernatur sint ullam illum consectetur inventore dicta magni repellat asperiores sunt perferendis explicabo laboriosam velit culpa, totam odit neque cum molestias odio, adipisci voluptate placeat sit obcaecati aperiam. Earum, ducimus maiores quam deserunt officiis at natus, optio sapiente saepe hic quo debitis aut et eligendi alias magni, iste cumque. Assumenda corporis aliquid, dignissimos perspiciatis itaque laborum dolorum!",
       "links": {
         "github": "mygit.com",
         "live": " mylive.com"
-      }
+      },
+      "theme": "#ffff00"
     },
     {
       "name": "Chwee",
@@ -19,12 +29,22 @@
         "/images/apartment-listing-mobile.png",
         "/images/apartment-listing.png"
       ],
-      "short-desccription": "this is a short description for the 'all-projects' page ",
-      "description": "Lorem ipsum, dolor sit amet consectetur adipisiprojectsListcing elit. Magni nesciunt et eos sint laborum beatae libero dolore est natus, maiores officiis officia enim aspernatur voluptas repudiandae dicta dignissimos excepturi incidunt voluptatum fugit, architecto esse. Natus sit molestias voluptatum! Ipsa culpa id autem! Non aspernatur sint ullam illum consectetur inventore dicta magni repellat asperiores sunt perferendis explicabo laboriosam velit culpa, totam odit neque cum molestias odio, adipisci voluptate placeat sit obcaecati aperiam. Earum, ducimus maiores quam deserunt officiis at natus, optio sapiente saepe hic quo debitis aut et eligendi alias magni, iste cumque. Assumenda corporis aliquid, dignissimos perspiciatis itaque laborum dolorum!",
+      "short_description": "this is a short description for the 'all-projects' page ",
+      "preview_images": [""],
+      "tech_stack": [""],
+      "features": [
+        {
+          "heading": "heading",
+          "content": "lorem ipsum is thge feature description",
+          "images": [""]
+        }
+      ],
+      "long_description": "Lorem ipsum, dolor sit amet consectetur adipisiprojectsListcing elit. Magni nesciunt et eos sint laborum beatae libero dolore est natus, maiores officiis officia enim aspernatur voluptas repudiandae dicta dignissimos excepturi incidunt voluptatum fugit, architecto esse. Natus sit molestias voluptatum! Ipsa culpa id autem! Non aspernatur sint ullam illum consectetur inventore dicta magni repellat asperiores sunt perferendis explicabo laboriosam velit culpa, totam odit neque cum molestias odio, adipisci voluptate placeat sit obcaecati aperiam. Earum, ducimus maiores quam deserunt officiis at natus, optio sapiente saepe hic quo debitis aut et eligendi alias magni, iste cumque. Assumenda corporis aliquid, dignissimos perspiciatis itaque laborum dolorum!",
       "links": {
         "github": "mygit.com",
         "live": " mylive.com"
-      }
+      },
+      "theme": "#ffff00"
     },
     {
       "name": "Chwee",
@@ -32,12 +52,22 @@
         "/images/apartment-listing-mobile.png",
         "/images/apartment-listing.png"
       ],
-      "short-desccription": "this is a short description for the 'all-projects' page ",
-      "description": "Lorem ipsum, dolor sit amet consectetur adipisiprojectsListcing elit. Magni nesciunt et eos sint laborum beatae libero dolore est natus, maiores officiis officia enim aspernatur voluptas repudiandae dicta dignissimos excepturi incidunt voluptatum fugit, architecto esse. Natus sit molestias voluptatum! Ipsa culpa id autem! Non aspernatur sint ullam illum consectetur inventore dicta magni repellat asperiores sunt perferendis explicabo laboriosam velit culpa, totam odit neque cum molestias odio, adipisci voluptate placeat sit obcaecati aperiam. Earum, ducimus maiores quam deserunt officiis at natus, optio sapiente saepe hic quo debitis aut et eligendi alias magni, iste cumque. Assumenda corporis aliquid, dignissimos perspiciatis itaque laborum dolorum!",
+      "short_description": "this is a short description for the 'all-projects' page ",
+      "preview_images": [""],
+      "tech_stack": [""],
+      "features": [
+        {
+          "heading": "heading",
+          "content": "lorem ipsum is thge feature description",
+          "images": [""]
+        }
+      ],
+      "long_description": "Lorem ipsum, dolor sit amet consectetur adipisiprojectsListcing elit. Magni nesciunt et eos sint laborum beatae libero dolore est natus, maiores officiis officia enim aspernatur voluptas repudiandae dicta dignissimos excepturi incidunt voluptatum fugit, architecto esse. Natus sit molestias voluptatum! Ipsa culpa id autem! Non aspernatur sint ullam illum consectetur inventore dicta magni repellat asperiores sunt perferendis explicabo laboriosam velit culpa, totam odit neque cum molestias odio, adipisci voluptate placeat sit obcaecati aperiam. Earum, ducimus maiores quam deserunt officiis at natus, optio sapiente saepe hic quo debitis aut et eligendi alias magni, iste cumque. Assumenda corporis aliquid, dignissimos perspiciatis itaque laborum dolorum!",
       "links": {
         "github": "mygit.com",
         "live": " mylive.com"
-      }
+      },
+      "theme": "#ffff00"
     },
     {
       "name": "Chwee",
@@ -45,12 +75,22 @@
         "/images/apartment-listing-mobile.png",
         "/images/apartment-listing.png"
       ],
-      "short-desccription": "this is a short description for the 'all-projects' page ",
-      "description": "Lorem ipsum, dolor sit amet consectetur adipisiprojectsListcing elit. Magni nesciunt et eos sint laborum beatae libero dolore est natus, maiores officiis officia enim aspernatur voluptas repudiandae dicta dignissimos excepturi incidunt voluptatum fugit, architecto esse. Natus sit molestias voluptatum! Ipsa culpa id autem! Non aspernatur sint ullam illum consectetur inventore dicta magni repellat asperiores sunt perferendis explicabo laboriosam velit culpa, totam odit neque cum molestias odio, adipisci voluptate placeat sit obcaecati aperiam. Earum, ducimus maiores quam deserunt officiis at natus, optio sapiente saepe hic quo debitis aut et eligendi alias magni, iste cumque. Assumenda corporis aliquid, dignissimos perspiciatis itaque laborum dolorum!",
+      "short_description": "this is a short description for the 'all-projects' page ",
+      "preview_images": [""],
+      "tech_stack": [""],
+      "features": [
+        {
+          "heading": "heading",
+          "content": "lorem ipsum is thge feature description",
+          "images": [""]
+        }
+      ],
+      "long_description": "Lorem ipsum, dolor sit amet consectetur adipisiprojectsListcing elit. Magni nesciunt et eos sint laborum beatae libero dolore est natus, maiores officiis officia enim aspernatur voluptas repudiandae dicta dignissimos excepturi incidunt voluptatum fugit, architecto esse. Natus sit molestias voluptatum! Ipsa culpa id autem! Non aspernatur sint ullam illum consectetur inventore dicta magni repellat asperiores sunt perferendis explicabo laboriosam velit culpa, totam odit neque cum molestias odio, adipisci voluptate placeat sit obcaecati aperiam. Earum, ducimus maiores quam deserunt officiis at natus, optio sapiente saepe hic quo debitis aut et eligendi alias magni, iste cumque. Assumenda corporis aliquid, dignissimos perspiciatis itaque laborum dolorum!",
       "links": {
         "github": "mygit.com",
         "live": " mylive.com"
-      }
+      },
+      "theme": "#ffff00"
     },
     {
       "name": "Chwee",
@@ -58,12 +98,22 @@
         "/images/apartment-listing-mobile.png",
         "/images/apartment-listing.png"
       ],
-      "short-desccription": "this is a short description for the 'all-projects' page ",
-      "description": "Lorem ipsum, dolor sit amet consectetur adipisiprojectsListcing elit. Magni nesciunt et eos sint laborum beatae libero dolore est natus, maiores officiis officia enim aspernatur voluptas repudiandae dicta dignissimos excepturi incidunt voluptatum fugit, architecto esse. Natus sit molestias voluptatum! Ipsa culpa id autem! Non aspernatur sint ullam illum consectetur inventore dicta magni repellat asperiores sunt perferendis explicabo laboriosam velit culpa, totam odit neque cum molestias odio, adipisci voluptate placeat sit obcaecati aperiam. Earum, ducimus maiores quam deserunt officiis at natus, optio sapiente saepe hic quo debitis aut et eligendi alias magni, iste cumque. Assumenda corporis aliquid, dignissimos perspiciatis itaque laborum dolorum!",
+      "short_description": "this is a short description for the 'all-projects' page ",
+      "preview_images": [""],
+      "tech_stack": [""],
+      "features": [
+        {
+          "heading": "heading",
+          "content": "lorem ipsum is thge feature description",
+          "images": [""]
+        }
+      ],
+      "long_description": "Lorem ipsum, dolor sit amet consectetur adipisiprojectsListcing elit. Magni nesciunt et eos sint laborum beatae libero dolore est natus, maiores officiis officia enim aspernatur voluptas repudiandae dicta dignissimos excepturi incidunt voluptatum fugit, architecto esse. Natus sit molestias voluptatum! Ipsa culpa id autem! Non aspernatur sint ullam illum consectetur inventore dicta magni repellat asperiores sunt perferendis explicabo laboriosam velit culpa, totam odit neque cum molestias odio, adipisci voluptate placeat sit obcaecati aperiam. Earum, ducimus maiores quam deserunt officiis at natus, optio sapiente saepe hic quo debitis aut et eligendi alias magni, iste cumque. Assumenda corporis aliquid, dignissimos perspiciatis itaque laborum dolorum!",
       "links": {
         "github": "mygit.com",
         "live": " mylive.com"
-      }
+      },
+      "theme": "#ffff00"
     },
     {
       "name": "Chwee",
@@ -71,12 +121,22 @@
         "/images/apartment-listing-mobile.png",
         "/images/apartment-listing.png"
       ],
-      "short-desccription": "this is a short description for the 'all-projects' page ",
-      "description": "Lorem ipsum, dolor sit amet consectetur adipisiprojectsListcing elit. Magni nesciunt et eos sint laborum beatae libero dolore est natus, maiores officiis officia enim aspernatur voluptas repudiandae dicta dignissimos excepturi incidunt voluptatum fugit, architecto esse. Natus sit molestias voluptatum! Ipsa culpa id autem! Non aspernatur sint ullam illum consectetur inventore dicta magni repellat asperiores sunt perferendis explicabo laboriosam velit culpa, totam odit neque cum molestias odio, adipisci voluptate placeat sit obcaecati aperiam. Earum, ducimus maiores quam deserunt officiis at natus, optio sapiente saepe hic quo debitis aut et eligendi alias magni, iste cumque. Assumenda corporis aliquid, dignissimos perspiciatis itaque laborum dolorum!",
+      "short_description": "this is a short description for the 'all-projects' page ",
+      "preview_images": [""],
+      "tech_stack": [""],
+      "features": [
+        {
+          "heading": "heading",
+          "content": "lorem ipsum is thge feature description",
+          "images": [""]
+        }
+      ],
+      "long_description": "Lorem ipsum, dolor sit amet consectetur adipisiprojectsListcing elit. Magni nesciunt et eos sint laborum beatae libero dolore est natus, maiores officiis officia enim aspernatur voluptas repudiandae dicta dignissimos excepturi incidunt voluptatum fugit, architecto esse. Natus sit molestias voluptatum! Ipsa culpa id autem! Non aspernatur sint ullam illum consectetur inventore dicta magni repellat asperiores sunt perferendis explicabo laboriosam velit culpa, totam odit neque cum molestias odio, adipisci voluptate placeat sit obcaecati aperiam. Earum, ducimus maiores quam deserunt officiis at natus, optio sapiente saepe hic quo debitis aut et eligendi alias magni, iste cumque. Assumenda corporis aliquid, dignissimos perspiciatis itaque laborum dolorum!",
       "links": {
         "github": "mygit.com",
         "live": " mylive.com"
-      }
+      },
+      "theme": "#ffff00"
     },
     {
       "name": "Chwee",
@@ -84,12 +144,22 @@
         "/images/apartment-listing-mobile.png",
         "/images/apartment-listing.png"
       ],
-      "short-desccription": "this is a short description for the 'all-projects' page ",
-      "description": "Lorem ipsum, dolor sit amet consectetur adipisiprojectsListcing elit. Magni nesciunt et eos sint laborum beatae libero dolore est natus, maiores officiis officia enim aspernatur voluptas repudiandae dicta dignissimos excepturi incidunt voluptatum fugit, architecto esse. Natus sit molestias voluptatum! Ipsa culpa id autem! Non aspernatur sint ullam illum consectetur inventore dicta magni repellat asperiores sunt perferendis explicabo laboriosam velit culpa, totam odit neque cum molestias odio, adipisci voluptate placeat sit obcaecati aperiam. Earum, ducimus maiores quam deserunt officiis at natus, optio sapiente saepe hic quo debitis aut et eligendi alias magni, iste cumque. Assumenda corporis aliquid, dignissimos perspiciatis itaque laborum dolorum!",
+      "short_description": "this is a short description for the 'all-projects' page ",
+      "preview_images": [""],
+      "tech_stack": [""],
+      "features": [
+        {
+          "heading": "heading",
+          "content": "lorem ipsum is thge feature description",
+          "images": [""]
+        }
+      ],
+      "long_description": "Lorem ipsum, dolor sit amet consectetur adipisiprojectsListcing elit. Magni nesciunt et eos sint laborum beatae libero dolore est natus, maiores officiis officia enim aspernatur voluptas repudiandae dicta dignissimos excepturi incidunt voluptatum fugit, architecto esse. Natus sit molestias voluptatum! Ipsa culpa id autem! Non aspernatur sint ullam illum consectetur inventore dicta magni repellat asperiores sunt perferendis explicabo laboriosam velit culpa, totam odit neque cum molestias odio, adipisci voluptate placeat sit obcaecati aperiam. Earum, ducimus maiores quam deserunt officiis at natus, optio sapiente saepe hic quo debitis aut et eligendi alias magni, iste cumque. Assumenda corporis aliquid, dignissimos perspiciatis itaque laborum dolorum!",
       "links": {
         "github": "mygit.com",
         "live": " mylive.com"
-      }
+      },
+      "theme": "#ffff00"
     },
     {
       "name": "Chwee",
@@ -97,12 +167,22 @@
         "/images/apartment-listing-mobile.png",
         "/images/apartment-listing.png"
       ],
-      "short-desccription": "this is a short description for the 'all-projects' page ",
-      "description": "Lorem ipsum, dolor sit amet consectetur adipisiprojectsListcing elit. Magni nesciunt et eos sint laborum beatae libero dolore est natus, maiores officiis officia enim aspernatur voluptas repudiandae dicta dignissimos excepturi incidunt voluptatum fugit, architecto esse. Natus sit molestias voluptatum! Ipsa culpa id autem! Non aspernatur sint ullam illum consectetur inventore dicta magni repellat asperiores sunt perferendis explicabo laboriosam velit culpa, totam odit neque cum molestias odio, adipisci voluptate placeat sit obcaecati aperiam. Earum, ducimus maiores quam deserunt officiis at natus, optio sapiente saepe hic quo debitis aut et eligendi alias magni, iste cumque. Assumenda corporis aliquid, dignissimos perspiciatis itaque laborum dolorum!",
+      "short_description": "this is a short description for the 'all-projects' page ",
+      "preview_images": [""],
+      "tech_stack": [""],
+      "features": [
+        {
+          "heading": "heading",
+          "content": "lorem ipsum is thge feature description",
+          "images": [""]
+        }
+      ],
+      "long_description": "Lorem ipsum, dolor sit amet consectetur adipisiprojectsListcing elit. Magni nesciunt et eos sint laborum beatae libero dolore est natus, maiores officiis officia enim aspernatur voluptas repudiandae dicta dignissimos excepturi incidunt voluptatum fugit, architecto esse. Natus sit molestias voluptatum! Ipsa culpa id autem! Non aspernatur sint ullam illum consectetur inventore dicta magni repellat asperiores sunt perferendis explicabo laboriosam velit culpa, totam odit neque cum molestias odio, adipisci voluptate placeat sit obcaecati aperiam. Earum, ducimus maiores quam deserunt officiis at natus, optio sapiente saepe hic quo debitis aut et eligendi alias magni, iste cumque. Assumenda corporis aliquid, dignissimos perspiciatis itaque laborum dolorum!",
       "links": {
         "github": "mygit.com",
         "live": " mylive.com"
-      }
+      },
+      "theme": "#ffff00"
     }
   ]
 }
