@@ -1,0 +1,190 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+@tailwind variants;
+
+@layer base {
+	* {
+		/* border: 1px solid red; */
+		transition: all 0.2s;
+	}
+
+	html {
+		font-family: "Poppins", sans-serif;
+	}
+
+	p {
+		@apply text-white;
+	}
+}
+
+/* * {
+	border: 1px solid red !important;
+} */
+
+canvas {
+	z-index: 1;
+}
+
+.profile {
+	z-index: 1;
+}
+
+.background {
+	background-image: url("../images/bg.jpeg");
+	/* z-index: 0; */
+}
+/* 
+.h-underline {
+	transition: all 2s;
+	position: relative;
+}
+
+.h-underline::after {
+	content: "";
+	position: absolute;
+	display: block;
+	height: 5px;
+	@apply bg-purple-600 w-0 rounded-lg;
+
+	transition: all 1s;
+}
+
+.h-underline:hover::after {
+	content: "";
+	position: absolute;
+	display: block;
+	height: 5px;
+
+	transition: all 2s;
+} */
+
+@layer components {
+	.dropdown {
+		animation: dropdownAnimation 0.3s linear;
+	}
+
+	@keyframes dropdownAnimation {
+		from {
+			opacity: 0;
+			transform: translateY(-60%);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
+	.hero::before {
+		z-index: -1;
+		content: "";
+		position: absolute;
+		width: 918.72px;
+		/* height: 182.55px; */
+		height: 382.55px;
+		left: 137.44px;
+		top: 284px;
+
+		background: rgba(248, 238, 11, 0.1);
+		filter: blur(133.5px);
+		transform: matrix(0.97, 0.26, -0.48, 0.87, 0, 0);
+	}
+
+	.hero::after {
+		z-index: -1;
+		content: "";
+
+		position: absolute;
+		width: 952.6px;
+		height: 174.78px;
+		left: 224.92px;
+		top: 180px;
+
+		background: rgba(62, 17, 189, 0.14);
+		filter: blur(133.5px);
+		transform: matrix(0.99, 0.11, -0.31, 0.95, 0, 0);
+	}
+
+	.hero-grad {
+		z-index: -1;
+		position: absolute;
+		width: 918.72px;
+		height: 182.55px;
+		left: 82.29px;
+		top: 374.67px;
+
+		background: rgba(184, 85, 174, 0.2);
+		filter: blur(133.5px);
+		transform: matrix(1, 0.05, -0.29, 0.96, 0, 0);
+	}
+
+	.hero-grad::after {
+		z-index: -1;
+		content: "";
+		position: absolute;
+		width: 911.53px;
+		height: 184.13px;
+		left: 538.7px;
+		top: 180px;
+
+		background: rgba(184, 85, 174, 0.44);
+		filter: blur(133.5px);
+		transform: matrix(0.96, 0.29, -0.51, 0.86, 0, 0);
+	}
+
+	.heroText {
+		position: relative;
+		background: linear-gradient(
+			100.19deg,
+			#1d0d4b -3.28%,
+			rgb(82, 64, 80) 125.97%
+		);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+	}
+
+	.heroText::after {
+		background: linear-gradient(
+			100.19deg,
+			#4309f3 -3.28%,
+			rgba(184, 85, 174, 0.64) 125.97%
+		);
+		background: linear-gradient(
+			100.19deg,
+			#5f2bee -3.28%,
+			rgb(243, 190, 239) 125.97%
+		);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		display: inline-block;
+
+		transition: all 1s ease;
+	}
+
+	.gradientText {
+		background: linear-gradient(
+			100.19deg,
+			#4309f3 -3.28%,
+			rgba(184, 85, 174, 0.64) 125.97%
+		);
+		background: linear-gradient(
+			100.19deg,
+			#5f2bee -3.28%,
+			rgb(243, 190, 239) 125.97%
+		);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		display: inline-block;
+
+		transition: all 1s ease;
+	}
+
+	.spinWheelText {
+		@apply text-[#faff00] uppercase text-2xl font-[900]  bg-clip-text font-cubano;
+		text-shadow: -1px -1px 0 #f159e2, 1px -1px 0 #f159e2, -1px 1px 0 #f159e2,
+			1px 1px 0 #f159e2, 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px #55efb7;
+	}
+}

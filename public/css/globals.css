@@ -1,0 +1,322 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Aeonik";
+  src: url("../fonts/Aeonik/AeonikTRIAL-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "mona";
+  src: url("../fonts/Mona/MonaSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "hubot";
+  src: url("../fonts/Hubot/HubotSans-Regular.ttf") format("truetype");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "blogh";
+  src: url("../fonts/Blogh/Blogh.otf") format("opentype");
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateZ(0);
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 15s linear infinite;
+  animation-direction: alternate;
+}
+
+.rank-tile-shadow {
+  box-shadow: 5px 5px 0px 0px rgb(0, 0, 0);
+}
+
+.page-1 {
+  perspective: 1000px;
+  transition: all 2s;
+  transform-style: preserve-3d;
+}
+
+.page-1:hover {
+  transform: rotateY(180deg);
+  cursor: pointer;
+}
+
+@layer base {
+  :root {
+    --color-primary: 245 152 184;
+  }
+
+  * {
+    box-sizing: border-box !important;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    @apply font-hubot;
+  }
+
+  *::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    @apply border-2 border-white bg-primary rounded-2xl;
+  }
+  *::-webkit-scrollbar-track {
+    @apply w-2 bg-white rounded-2xl;
+  }
+
+  *::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-400 rounded-2xl;
+  }
+  *::-webkit-scrollbar-thumb:active {
+    @apply bg-gray-500 rounded-2xl;
+  }
+
+  html {
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  p {
+    @apply text-grey-1;
+  }
+}
+
+/* * {
+	border: 1px solid red !important;
+} */
+
+canvas {
+  z-index: 1;
+}
+
+.profile {
+  z-index: 1;
+}
+
+.background {
+  background-image: url("/images/bg.jpeg");
+  /* z-index: 0; */
+}
+
+/* 
+.h-underline {
+	transition: all 2s;
+	position: relative;
+}
+
+.h-underline::after {
+	content: "";
+	position: absolute;
+	display: block;
+	height: 5px;
+	@apply w-0 bg-purple-600 rounded-lg;
+
+	transition: all 1s;
+}
+
+.h-underline:hover::after {
+	content: "";
+	position: absolute;
+	display: block;
+	height: 5px;
+
+	transition: all 2s;
+} */
+
+@layer components {
+  .dropdown {
+    animation: dropdownAnimation 0.3s linear;
+  }
+
+  @keyframes dropdownAnimation {
+    from {
+      opacity: 0;
+      transform: translateY(-60%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .hero::before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 918.72px;
+    /* height: 182.55px; */
+    height: 382.55px;
+    left: 137.44px;
+    top: 284px;
+
+    background: rgba(248, 238, 11, 0.1);
+    filter: blur(133.5px);
+    transform: matrix(0.97, 0.26, -0.48, 0.87, 0, 0);
+  }
+
+  .hero::after {
+    z-index: -1;
+    content: "";
+
+    position: absolute;
+    width: 952.6px;
+    height: 174.78px;
+    left: 224.92px;
+    top: 180px;
+
+    background: rgba(62, 17, 189, 0.14);
+    filter: blur(133.5px);
+    transform: matrix(0.99, 0.11, -0.31, 0.95, 0, 0);
+  }
+
+  .hero-grad {
+    z-index: -1;
+    position: absolute;
+    width: 918.72px;
+    height: 182.55px;
+    left: 82.29px;
+    top: 374.67px;
+
+    background: rgba(184, 85, 174, 0.2);
+    filter: blur(133.5px);
+    transform: matrix(1, 0.05, -0.29, 0.96, 0, 0);
+  }
+
+  .hero-grad::after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 911.53px;
+    height: 184.13px;
+    left: 538.7px;
+    top: 180px;
+
+    background: rgba(184, 85, 174, 0.44);
+    filter: blur(133.5px);
+    transform: matrix(0.96, 0.29, -0.51, 0.86, 0, 0);
+  }
+
+  .heroText {
+    position: relative;
+    background: linear-gradient(
+      100.19deg,
+      #1d0d4b -3.28%,
+      rgb(82, 64, 80) 125.97%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .heroText::after {
+    background: linear-gradient(100.19deg, #4c6ef5 -3.28%, #91a7ff 125.97%);
+    background: linear-gradient(100.19deg, #4c6ef5 -3.28%, #91a7ff 125.97%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+
+    transition: all 1s ease;
+  }
+
+  .gradientText {
+    background: linear-gradient(100.19deg, #4c6ef5 -3.28%, #91a7ff 125.97%);
+    background: linear-gradient(100.19deg, #4c6ef5 -3.28%, #91a7ff 125.97%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+
+    transition: all 1s ease;
+  }
+
+  .spinWheelText {
+    @apply font-[900]  bg-clip-text;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+      1px 1px 0 black, 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px gray;
+  }
+
+  .spinWheelText_ {
+    @apply text-[#faff00] uppercase text-2xl font-[900] bg-clip-text;
+    text-shadow: -1px -1px 0 #f159e2, 1px -1px 0 #f159e2, -1px 1px 0 #f159e2,
+      1px 1px 0 #f159e2, 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px #55efb7;
+  }
+}
+:root {
+  --main-color-1: #4c6ef5;
+  --main-color-2: #748ffc;
+  --main-color-3: #91a7ff;
+  --main-color-4: #bac8ff;
+  --main-color-5: #dbe4ff;
+  --main-color-1-transparent: #4c6ef5d4;
+  --accent-color: #dbbb3b;
+  --accent-color: #d9b93b;
+  --grey-color-1: #495057;
+  --grey-color-2: #adb5bd;
+  --grey-color-3: #b9b9b9;
+  --background-color: #e9ecef;
+}
+
+/* NOTE container */
+.animation-container {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  width: 100%;
+  @apply z-[1];
+}
+
+.animation-axis,
+.animation-wrapper,
+.animation {
+  overflow-x: visible;
+}
+
+.animation-wrapper {
+  @apply relative;
+}
+
+/* 
+.animation-axis {
+  animation: rotate-anticlockwise 40s infinite linear;
+  border-radius: 50%;
+  position: absolute;
+  width: 0;
+  height: 0;
+} */
+
+/* @keyframes rotate-anticlockwise {
+  0% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-clockwise {
+  0% {
+    transform: rotate(-360deg);
+  }
+}
+ */
+
+.animation-axis {
+  @apply fixed top-0 z-10;
+}
+
+.animation-wrapper {
+  @apply relative z-10 w-fit;
+}
+
+.animation {
+  @apply absolute bottom-0 right-0 z-10 rounded-full shadow-md bg-grey-2;
+}
