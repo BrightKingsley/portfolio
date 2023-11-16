@@ -1,1 +1,0 @@
-export {default} from "./Wheel3d"

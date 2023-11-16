@@ -1,8 +1,9 @@
 export function buttonStyle(
   variant: "filled" | "flat" | "outlined",
   color: "primary" | "body" | "black"
-) {
-  return `group rounded-md px-6 py-2 transition-all duration-200 hover:w-[calc(100%+2rem)] ${
+  // ): React.ComponentProps<"div">["className"] {
+): React.HtmlHTMLAttributes<HTMLElement>["className"] {
+  return `group rounded-md  px-6 py-2 transition-all duration-200 hover:w-[calc(auto+5rem)] ${
     variant === "filled"
       ? `text-white ${
           color === "body"

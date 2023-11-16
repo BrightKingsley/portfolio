@@ -2,18 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import PreviewImages from "../components/PreviewImages";
-
-interface Project {
-  title: string;
-  image: string;
-  shortDesc: string;
-  longDesc: string;
-  previewImages: string[];
-  techStack: string[];
-  theme?: string;
-  links: { live: string; github: string };
-  features: { heading: string; content: string; images: string[] }[];
-}
+import { projects } from "@/utils/constants/endpoints";
+import NextProject from "../components/NextProject";
 
 <>
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam facere
@@ -28,17 +18,45 @@ interface Project {
   accusantium.
 </>;
 
-export default function Project({
+const headers = new Headers({
+  "Content-Type": "application/json",
+  "Access-Control-Allow-Origin": "*",
+});
+
+const getProjectData = async (id: string) => {
+  //  const response = await fetch(`${projects}/${params.project}.json`, {
+  try {
+    const response = await fetch(
+      "https://raw.githubusercontent.com/BrightKingsley/public-db/main/portfolio/data/projects/1.json",
+      {
+        headers,
+      }
+    );
+    console.log(response);
+    const data = (await response.json()) as Project;
+    console.log({ projects: `${projects}/${id}.json`, response });
+    return data;
+  } catch (error) {
+    console.error({ error });
+    return null;
+  }
+};
+
+export default async function Project({
   params,
   searchParams,
 }: {
-  params: string;
+  params: { project: string };
   searchParams: { [key: string]: string };
 }) {
-  const project: Project = {
+  const data = await getProjectData(params.project);
+
+  if (!data) return <p>Could not fetch data</p>;
+
+  const sw: Project = {
     features: [
       {
-        content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam facere accusantium autem impedit omnis nemo perspiciatis vitae dolores ab qui maiores, iure similique consequatur eligendi doloribus perferendis aliquid dicta voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit.`,
+        content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam facere accusantium autem impedit omnis nemo perspiciatis vitae dolores ab qui maiores, iure similique consequatur eligendi doloribus perferendis aliquproject dicta voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit.`,
         heading: "Lorem Ipsum",
         images: ["/images/music-player.png"],
       },
@@ -92,23 +110,23 @@ export default function Project({
           <div className="flex flex-col-reverse items-center gap-12 md:flex-row">
             <div className="space-y-3 flex-[2]">
               <h1 className="text-4xl font-bold transition-all duration-200 group-hover:text-primary">
-                {project.title}
+                {data.title}
               </h1>
               <p className="capitalize">
-                {project.shortDesc}
+                {data.shortDesc}
                 <Link href={"?longDesc=true"} className="text-primary">
                   ...See All
                 </Link>
               </p>
               <div className="flex items-center gap-3">
                 <Link
-                  href={project.links.live}
+                  href={data.links.live}
                   className="px-4 py-2 text-white bg-black rounded-md"
                 >
                   Live Site
                 </Link>
                 <Link
-                  href={project.links.github}
+                  href={data.links.github}
                   className="px-4 py-2 text-white bg-black rounded-md"
                 >
                   Github
@@ -117,15 +135,15 @@ export default function Project({
             </div>
             <div className="flex-[3]">
               <Image
-                src={project.image}
+                src={data.image}
                 width={1080}
                 height={1080}
-                alt={project.title}
+                alt={data.title}
               />
             </div>
           </div>
 
-          <PreviewImages images={project.previewImages} />
+          <PreviewImages images={data.previewImages} />
         </section>
         {/* <section className="group w-[90%] mx-auto">
         </section> */}
@@ -135,8 +153,10 @@ export default function Project({
           </h2>
           <div className="">
             <ul className="grid grid-cols-2 gap-2 md:grid-cols-3">
-              {project.techStack.map((tech) => (
-                <li className="list-disc list-inside">{tech}</li>
+              {data.techStack.map((tech, i) => (
+                <li key={i} className="list-disc list-inside">
+                  {tech}
+                </li>
               ))}
             </ul>
           </div>
@@ -146,7 +166,7 @@ export default function Project({
             Features
           </h2>
           <div className="space-y-10 md:space-y-20">
-            {project.features.map((feature, i) => (
+            {data.features.map((feature, i) => (
               <div
                 key={i}
                 className={`flex flex-col-reverse md:flex-row gap-4 md:gap-8
@@ -170,28 +190,7 @@ export default function Project({
             ))}
           </div>
         </section>
-        <div className="w-full md:flex md:items-center">
-          <Link
-            href={"2"}
-            className="flex items-center gap-3 p-2 pr-6 mx-auto mb-6 border rounded-xl w-fit md:mx-4 md:ml-auto"
-          >
-            <div className="relative w-12 h-12 rounded-full overflow-clip">
-              <Image
-                src={project.image}
-                alt="next project"
-                // width={1080}
-                // height={1080}
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="space-y-0">
-              <h4>{project.title}</h4>
-              {/* <p>Next Up</p> */}
-            </div>
-            <span>{"->"}</span>
-          </Link>
-        </div>
+        <NextProject id={(+params.project + 1).toString()} />
       </div>
       {searchParams.longDesc === "true" && (
         <div className="fixed inset-0 top-0 left-0 z-10 flex items-center justify-center w-full h-full backdrop-blur-sm">
@@ -205,10 +204,12 @@ export default function Project({
             <Link href={"1"} replace>
               close
             </Link>
-            <p>{project.longDesc}</p>
+            <p>{data.longDesc}</p>
           </div>
         </div>
       )}
     </>
   );
 }
+
+//

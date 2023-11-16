@@ -56,7 +56,8 @@ html {
 
 @layer base {
   :root {
-    --color-primary: 245 152 184;
+    /* --color-primary: 245 152 184; */
+    --color-primary: 76 110 245;
   }
 
   * {

@@ -1,7 +1,5 @@
-import { Navbar, RotatingSpheres } from "./components";
 import "@/public/css/globals.css";
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
 import "swiper/css";
 
 const description = "Build amazing websites and applications";
@@ -42,12 +40,6 @@ const keywords = [
   "Bright Kingsley",
 ];
 
-const poppins = Poppins({
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  subsets: ["latin"],
-  // display: "swap",
-});
-
 export const metadata: Metadata = {
   metadataBase: new URL("https://drawr.vercel.app"),
   title: "Bright Kingsley | Software Developer",
@@ -82,7 +74,7 @@ export default function RootLayout({
       <body className="bg-gray-200">
         {/* <Navbar /> */}
         <main
-          className={`${poppins.className} w-screen h-screen overflow-auto overflow-x-hidden min-h-full relative bg-primary/5`}
+          className={`w-screen h-screen overflow-auto overflow-x-hidden min-h-full relative bg-primary/5`}
         >
           {children}
         </main>
